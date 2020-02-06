@@ -1,6 +1,6 @@
 const path = require(`path`);
 
-exports.createPages = ({ grphql, actions }) => {
+exports.createPage = ({ graphql, actions }) => {
     const { createPage } = actions;
     return new Promise((resolve, reject) => {
         graphql(`
