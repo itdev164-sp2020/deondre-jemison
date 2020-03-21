@@ -9,9 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled, { ThemeProvider } from 'styled-components'
-import { Gray } from '../themes/Gray'
-import Header from "./header"
-import GlobalStyle from './GlobalStyle'
+import { Gray } from '../../themes/Gray'
+import Header from "../Header/header"
+import GlobalStyle from '../GlobalStyle'
 
 const Content = styled.div`
   margin: 0 auto;
@@ -51,4 +51,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export {Layout}
