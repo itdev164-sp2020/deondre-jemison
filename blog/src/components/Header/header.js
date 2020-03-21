@@ -43,4 +43,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export {Header}
+export { Header }
