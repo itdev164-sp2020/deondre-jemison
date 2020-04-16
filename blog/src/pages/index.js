@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { Layout } from "../components/Layout"
-import { SEO } from "../components/Seo"
+import { SEO } from "../components/seo"
 import { List, ListItem } from "../components/List"
 
 const IndexPage = ({ data }) => (
@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => (
   </Layout>
 )
 
-export default IndexPage
+export { IndexPage }
 
 export const query = graphql`
 {
