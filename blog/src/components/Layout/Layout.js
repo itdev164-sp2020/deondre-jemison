@@ -10,12 +10,12 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled, { ThemeProvider } from 'styled-components'
 import { Gray } from '../../themes/Gray'
-import Header from "../Header/Header"
+import { Header } from "../Header"
 import GlobalStyle from '../GlobalStyle'
 
 const Content = styled.div`
   margin: 0 auto;
-  max-width: 960;
+  max-width: 960px;
   padding: 0 1.0875rem 1.45rem;
   padding-top: 0;
 `
@@ -51,4 +51,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export { Layout }

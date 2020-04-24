@@ -8,7 +8,7 @@ import { List, ListItem } from "../components/List"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <List width={[1, 1 / 2, 2/ 3]} p={2}>
+    <List width={[1, 1/2, 2/3]} p={2}>
       {
         data.allContentfulBlogPost.edges.map(edge => (
           <ListItem p={3}>
@@ -35,7 +35,7 @@ export const query = graphql`
         title
         slug
         heroImage {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 600) {
             src
           }
         }
