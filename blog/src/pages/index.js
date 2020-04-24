@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/Seo"
+
 import { List, ListItem } from "../components/List"
 
 const IndexPage = ({ data }) => (
@@ -18,6 +19,7 @@ const IndexPage = ({ data }) => (
           </div>
           <div>{edge.node.body.childMarkdownRemark.excerpt}</div>
         </ListItem>
+
         ))
       }
     </List>
@@ -25,6 +27,7 @@ const IndexPage = ({ data }) => (
 )
 
 export default IndexPage 
+
 
 export const query = graphql`
 {
